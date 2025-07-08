@@ -2,7 +2,10 @@ import inquirer from 'inquirer';
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
+    {
+        message: 'What is your name?', 
+        name: 'URL'
+    }
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
